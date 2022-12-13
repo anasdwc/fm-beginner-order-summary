@@ -15,6 +15,13 @@ body {
   align-items: center;
   height: 100vh;
 }
+body img.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
 
 main {
   margin: 1rem;
@@ -67,6 +74,10 @@ main .content .content-price .price-button a {
   color: hsl(245deg, 75%, 52%);
   font-weight: 700;
 }
+main .content .content-price .price-button a:hover, main .content .content-price .price-button a:active {
+  color: hsl(245deg, 50%, 60%);
+  text-decoration: none;
+}
 main .content .content-button {
   margin-top: 1rem;
   display: grid;
@@ -86,12 +97,18 @@ main .content .content-button .process {
   font-size: 1rem;
   box-shadow: 0 15px 15px hsl(225deg, 100%, 94%);
 }
+main .content .content-button .process:hover, main .content .content-button .process:active {
+  background-color: hsl(245deg, 50%, 60%);
+}
 main .content .content-button .cancel {
   border: none;
   background-color: transparent;
   color: hsl(224deg, 23%, 55%);
   font-size: 1rem;
   font-weight: 700;
+}
+main .content .content-button .cancel:hover, main .content .content-button .cancel:active {
+  color: hsl(223deg, 47%, 23%);
 }
 
 /*# sourceMappingURL=styles.css.map */

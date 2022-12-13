@@ -27,6 +27,20 @@
     </style>
   </head>
   <body>
+    <picture>
+      <source
+        media="(min-width: 1000px)"
+        srcset="./images/pattern-background-desktop.svg"
+      />
+      <source srcset="./images/pattern-background-mobile.svg" />
+      <img
+        src="./images/pattern-background-desktop.svg"
+        class="background"
+        alt=""
+        aria-hidden="true"
+      />
+    </picture>
+
     <main>
       <div class="img-wrapper">
         <img
